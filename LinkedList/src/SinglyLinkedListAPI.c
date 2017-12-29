@@ -11,7 +11,7 @@ List *initializeList(void (*printFunction)(void *toBePrinted),void (*deleteFunct
 	list->deleteNode = deleteFunction;
 	list->printNode = printFunction;
 	list->compare = compareFunction;
-    return list;
+        return list;
 }
 Node *initializeNode(void *data){
 
@@ -24,7 +24,7 @@ Node *initializeNode(void *data){
 	   return node;
 	}
 	else{
-		return NULL;
+            return NULL;
 	}
 }
 EmptyList * createEmptyList(void (*printData)(void *toBePrinted)){
@@ -74,6 +74,9 @@ void insertBack(EmptyList *eList, void *toBeAdded){
 }
 void deleteList(EmptyList *eList){
 
+	if(eList == NULL){
+             return;
+	}
 	Node *itr;
 
 	while(eList->head != NULL){
