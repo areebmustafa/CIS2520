@@ -1,0 +1,8 @@
+This file contains a program that works a Singly Linked List.
+
+To run the program:
+  1. make clean
+  2. make
+  3 ./bin/runMe
+ 
+Try your best to understand the code. This should give a good sense on how to work with void pointers.
