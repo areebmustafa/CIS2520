@@ -40,7 +40,6 @@ typedef struct List{
    void (*printNode)(void *toBePrinted);
 }List;
 
-
 /*
 *Function to point the list head to the appropriate functions. Allocates memory to the struct.
 @param printFunction function pointer to print a single node of the list
